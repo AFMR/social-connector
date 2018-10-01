@@ -18,6 +18,8 @@
     "mongoose": "^5.2.17",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
+    "run": "^1.4.0",
+    "server": "^1.0.18",
     "validator": "^10.7.1"
   },
   "devDependencies": {
