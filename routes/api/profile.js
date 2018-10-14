@@ -84,7 +84,6 @@ router.post('/', passport.authenticate('jwt', {session: false}),
         }
       });
   }
-
 )
 
 // @route   Get api/profile/all
@@ -120,15 +119,14 @@ router.get('/handle/:handle', (req,res)=> {
       return res.status(404).json(errors);
     }
 
-
     res.json(profile);
   })
   .catch(err => res.status(404).json(err));
+})
 
 // @route   GET api/profile/user/:user_id
 // @desc    Get profile by user_id
 // @access  Public
-
 router.get('/user/:user_id', (req, res) => {
    const errors = {};
 
